@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#747474</color>
+
+    <color name="colorGray">#8c8c8c</color>
+    <color name="colorDardGray">#565656</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGreen">#55be53</color>
+
+    <color name="darkTransparent">#99000000</color>
+    <color name="colorRed">#b61717</color>
+    <color name="textDigree">#00c1ff</color>
+    <color name="colorBlack">#202020</color>
+
+    <color name="colorSelection">#79a6af</color>
+    <color name = "colorStay">#e1b219</color>
+    <color name = "colorAway">#ff2600</color>
+
+    <color name="coloeBackgroundWifi">#516984</color>
+
+    <color name="colorAlertBackgorund">#ff3700</color>
+    <color name="colorClose">#8092a6ff</color>
+    <color name="btn_transparent">#00ffffff</color>
+    <color name="colorBar">#cccccc</color>
+    <color name="colorVideoText">#dc9034</color>
+    <color name="colorHear">#d4811d</color>
+
+    <color name="colorOrange">#f19d2f</color>
+
+    <color name="gray_50">#FAFAFA</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+</resources>

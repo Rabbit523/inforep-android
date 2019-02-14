@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_rounded_background"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_height="200dp">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="184dp"
+            android:id="@+id/layout_on"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/ic_rounded_background">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fan_on"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAN ON"
+                android:textColor="@color/colorBlack"
+
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAN RUNS CONTINIOUSLY"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_auto"
+
+            android:layout_width="150dp"
+            android:layout_height="184dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:background="@drawable/ic_rounded_background">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/fan_auto"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextViewSemiBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAN AUTO"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:layout_marginTop="8dp"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAN RUNS CONTINIOUSLY"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

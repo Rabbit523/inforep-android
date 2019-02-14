@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.GarageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_rounded_background"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/iv_garage"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/garage_closed"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="32dp">
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GARAGE DOOR"
+                    android:textSize="16sp"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:id="@+id/tv_status"
+
+                    android:textColor="@color/colorRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLOSED"
+                    android:layout_marginTop="4dp"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:id="@+id/layout_open"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/ic_rounded_background"
+                android:orientation="vertical"
+                android:layout_marginBottom="4dp">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:src="@drawable/open_garage"
+                    android:layout_height="48dp"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OPEN ALL"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_close"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/ic_rounded_background"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:src="@drawable/close_garage"
+                    android:layout_height="48dp"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CLOSE ALL"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

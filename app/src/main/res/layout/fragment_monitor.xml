@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MonitorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/ic_rounded_background">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quick Access"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:id="@+id/iv_lock"
+                        android:src="@drawable/mornitor"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorGreen"
+                        android:text="Press to"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorGreen"
+                        android:text="Deactivate"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/ic_rounded_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_active"
+                        android:layout_width="70dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_rounded_button_active"
+                        android:text="active"
+                        />
+
+                    <Button
+                        android:id="@+id/btn_all"
+                        android:layout_width="70dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="16dp"
+
+                        android:textColor="@color/colorGray"
+                        android:textSize="10sp"
+                        android:background="@drawable/ic_rounded_button_deactive"
+                        android:layout_height="30dp"
+                        android:text="All"
+                        />
+
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

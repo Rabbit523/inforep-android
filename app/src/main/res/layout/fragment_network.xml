@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NetworkFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:weightSum="3.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="2.2">
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/icon_wifi_setting"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="16dp">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="-4dp"
+                        android:text="Wi-Fi"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="CONNECTED"/>
+
+                    <Button
+                        android:id="@+id/btn_wifi_detail"
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/ic_rounded_button_active"
+                        android:layout_marginTop="8dp"
+                        android:text="DETAILS"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/icon_download"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="16dp">
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginBottom="-4dp"
+                        android:layout_height="wrap_content"
+                        android:text="SOFTWARE"/>
+
+                    <Button
+                        android:id="@+id/btn_soft_detail"
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:background="@drawable/ic_rounded_button_active"
+                        android:layout_marginTop="8dp"
+                        android:text="DETAILS"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_blutooth_green"/>
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorBlack"
+                android:text="BLUETOOTH ON"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

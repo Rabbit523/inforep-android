@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_height="260dp"
+        android:orientation="vertical">
+
+        <infopanel.theappchief.com.infopanel.MyTextView
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:text="WI-FI DETAILS"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/textDigree"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="4dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="17sp"
+                        android:text="Backend Connection:"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="-4dp"
+                        android:textSize="14sp"
+                        android:text="Psss"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="17sp"
+                        android:text="Upgrade Server:"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="-4dp"
+
+                        android:text="Connected"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="17sp"
+                        android:text="Internet:"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="-4dp"
+
+                        android:textSize="14sp"
+                        android:text="Available"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="17sp"
+                        android:text="IP Address:"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="-4dp"
+
+                        android:text="128.436.7.8"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="17sp"
+                        android:text="SSID "/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="-4dp"
+
+                        android:text="WI-FI Name"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="17sp"
+                        android:text="Local Area Network Speed:"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="14sp"
+                        android:layout_marginTop="-4dp"
+
+                        android:text="390MBPS"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <infopanel.theappchief.com.infopanel.MyTextView
+            android:id="@+id/tv_cancel"
+            android:background="@color/coloeBackgroundWifi"
+            android:layout_height="40dp"
+            android:text="CANCEL"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_width="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

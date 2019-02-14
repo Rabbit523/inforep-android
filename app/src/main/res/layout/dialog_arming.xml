@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_rounded_background"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Arming..."
+                android:gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="36dp">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/btn_plus"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:text="+ 60"
+                        android:textSize="20sp"
+                        android:textColor="@color/colorGreen"
+                        android:background="@drawable/ic_rounded_background_green"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:id="@+id/layout_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/ic_rounded_background_red"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_delete"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

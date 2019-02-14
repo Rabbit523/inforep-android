@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.CameraPanelFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:weightSum="2"
+        android:background="@drawable/ic_rounded_background">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PANEL CAMERA"
+                android:layout_marginTop="8dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"/>
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp"
+                android:weightSum="4.2"
+                android:gravity="center"
+                android:layout_height="40dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="DISARM"
+                    android:textSize="9sp"
+                    android:textColor="@color/colorGray"
+                    android:background="@drawable/ic_rounded_button_deactive"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:text="SETTINGS"
+                    android:textSize="9sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorGray"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/ic_rounded_button_deactive"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:text="ALARMS"
+                    android:textSize="9sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorGray"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/ic_rounded_button_deactive"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:text="ALL"
+                    android:textSize="9sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/ic_rounded_button_active"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+            </ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

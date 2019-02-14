@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SystemSettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/layout_brightness"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_display"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="DISPLAY"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_sdcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_sdcard"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="SD CARD"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_temp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_temp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_farent"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="WEATHER TEMPERATURE"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_status"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="STATUS"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_zwave"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_wave_device"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="Z-WAVE DEVICE"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/layout_otherWave"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:src="@drawable/ic_other_wave_device"/>
+
+                        <infopanel.theappchief.com.infopanel.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_marginTop="3dp"
+                            android:textSize="14sp"
+                            android:text="OTHER Z-WAVE DEVICE"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_automatic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_automation"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="AUTOMATION"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_activity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_mornitor"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="ACTIVITY MONITOR"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_license"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_handshake"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="LICENSE"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_advance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_settings"/>
+
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:layout_marginTop="3dp"
+                        android:textSize="14sp"
+                        android:text="ADVANCED"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

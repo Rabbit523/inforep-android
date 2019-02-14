@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center_vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="75dp"
+        android:layout_marginLeft="16dp"
+        android:layout_height="75dp">
+        <VideoView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="75dp"
+            android:layout_centerInParent="true"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play_circle"
+            android:layout_height="20dp"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_rounded_video"/>
+
+    </RelativeLayout>
+
+
+    <infopanel.theappchief.com.infopanel.MyTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="75dp"
+        android:textAllCaps="true"
+        android:gravity="center_vertical|left"/>
+
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="464dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_rounded_background"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/layout_off"
+            android:layout_width="100dp"
+            android:layout_height="184dp"
+            android:background="@drawable/ic_rounded_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/power" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="OFF"
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="TURN OFF HEATER AND AIR CONDITIONER"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_heat"
+            android:layout_width="100dp"
+            android:layout_height="184dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_rounded_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/heat" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="HEAT"
+
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="TURN ON HEATER TO REACH TARGET TEMP"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cool"
+            android:layout_width="100dp"
+            android:layout_height="184dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_rounded_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/cool" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="COOL"
+
+                android:textColor="@color/colorBlack"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="3"
+                android:text="TURN ON AIR CONDITIONER TO REACHTARGET TEMPTERATURE"
+
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_auto"
+            android:layout_width="100dp"
+            android:layout_height="184dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/ic_rounded_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/auto_temp" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="AUTO"
+                android:textColor="@color/colorBlack"
+
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="3"
+                android:text="TURN ON HEATER OR AIR CONDITIOER TO REACH MAINTAIN TARGET TEMP"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

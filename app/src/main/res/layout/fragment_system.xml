@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SystemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.8"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/iv_lock"
+                    android:src="@drawable/lock"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17.5sp"
+                        android:layout_marginBottom="-2dp"
+                        android:text="SYSTEM"/>
+                    <infopanel.theappchief.com.infopanel.MyTextView
+                        android:id="@+id/tv_mainAramed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17.5sp"
+                        android:layout_marginTop="-2dp"
+                        android:textColor="@color/colorGreen"
+                        android:text="DISARMED"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.1"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical"
+                android:background="@drawable/ic_rounded_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_active"
+                        android:layout_width="60dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorWhite"
+                        android:layout_height="24dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@drawable/ic_rounded_button_active"
+                        android:text="active" />
+
+                    <Button
+                        android:id="@+id/btn_all"
+                        android:layout_width="60dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/colorGray"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="2dp"
+
+                        android:background="@drawable/ic_rounded_button_deactive"
+                        android:layout_height="24dp"
+                        android:text="All" />
+
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

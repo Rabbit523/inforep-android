@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.VideoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@drawable/ic_rounded_background">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE VIDEO CAMERAS"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"
+                    android:fitsSystemWindows="true"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"/>
+
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_play_circle"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:textSize="10sp"
+                android:background="@drawable/ic_rounded_button_active"
+                android:text="CAMERAS"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:layout_marginBottom="10dp"
+                android:dividerHeight="0dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

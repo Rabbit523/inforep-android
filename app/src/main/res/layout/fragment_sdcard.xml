@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SdcardFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical">
+
+        <infopanel.theappchief.com.infopanel.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/textDigree"
+            android:text="SD card"/>
+
+        <infopanel.theappchief.com.infopanel.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorGray"
+            android:text="Mount SD card"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorGray">
+        </LinearLayout>
+
+        <infopanel.theappchief.com.infopanel.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:text="Erase SD card"/>
+
+        <infopanel.theappchief.com.infopanel.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorGray"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Erase all data on sd card,such as music and photos"/>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

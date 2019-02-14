@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:text="CURRENT STATUS"
+                android:background="#848484"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:layout_marginRight="1dp"
+                android:layout_height="match_parent"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1.3"
+                android:textColor="@color/colorWhite"
+                android:text="ALARMS"
+                android:layout_marginRight="1dp"
+                android:background="#848484"
+                android:textSize="16sp"
+
+                android:gravity="center"
+                android:layout_height="match_parent"/>
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="#848484"
+                android:textSize="16sp"
+
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="HISTORY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="#a8a8a8"
+            android:weightSum="3.5">
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:text="NO"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical|left"
+                android:layout_height="match_parent"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textColor="@color/colorWhite"
+                android:text="NAME"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"/>
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:text="STATUS"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:text="BATTERY"/>
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorWhite"
+                android:text="HISTORY"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="3.5">
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:text="1"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical|left"
+                android:layout_height="match_parent"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textColor="@color/colorBlack"
+                android:text="Front Door"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"/>
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:text="Closed"/>
+
+            <infopanel.theappchief.com.infopanel.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:text="Normal"/>
+
+            <LinearLayout
+                android:id="@+id/layout_view"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:background="@color/colorBar"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="View"
+                    android:textColor="@color/colorBlack"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

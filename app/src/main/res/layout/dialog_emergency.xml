@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="480dp"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_rounded_background"
+        android:layout_height="240dp">
+
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <LinearLayout
+                android:id="@+id/layout_police"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_sec"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:textSize="14sp"
+                    android:text="POLICE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="8dp" />
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_margin="8dp"
+                    android:text="TOUCH TO TRIGGER SECURITY PANIC"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/alarm_blue"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SILENT ALARM"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/layout_fire"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="6dp"
+                android:layout_weight="4"
+                android:background="@drawable/ic_rounded_background"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_fire" />
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="FIRE"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="top|center_horizontal"
+                    android:text="TOUCH TO TRIGGER FIRE PANIC"
+
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:orientation="vertical"
+            android:weightSum="4">
+            <LinearLayout
+                android:id="@+id/layout_auxiliary"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_aux"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:textSize="14sp"
+                    android:text="AUXILIARY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="8dp" />
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:textSize="12sp"
+
+                    android:gravity="center"
+                    android:text="TOUCH TO TRIGGER EMERGENCY PANIC"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/ic_rounded_background">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/alarm_gam"/>
+
+                <infopanel.theappchief.com.infopanel.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SILENT ALARM"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
